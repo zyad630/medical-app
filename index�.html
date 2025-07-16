@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>فتح تطبيق Medical Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f0fff4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Cairo', sans-serif;
+      color: #2f855a;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #38a169;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2f855a;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h2>اضغط على الزر لفتح تطبيق Medical Home</h2>
+  <button onclick="openApp()">فتح التطبيق</button>
+
+  <script>
+    function openApp() {
+      window.location.href = "intent://?link=https://medicalhomeeg.com/user_profile/mohammed-abdel-rahman-atris-mohammed-abdel-rahman-2/#Intent;scheme=https;package=io.kodular.ziadmd207.MedicalHome;S.browser_fallback_url=https://play.google.com/store/apps/details?id=io.kodular.ziadmd207.MedicalHome;end";
+    }
+  </script>
+</body>
+</html>
